@@ -62,6 +62,7 @@ services:
       - RABBITMQ_HOST=rabbitmq
     volumes:
       - ../django_project:/home/web/django_project
+#      - /home/meomancer/Development/django-bims/bims:/home/web/django_project/bims
       - ./static:/home/web/static:rw
       - ./media:/home/web/media:rw
       - ./reports:/home/web/reports
@@ -140,6 +141,7 @@ services:
       - RABBITMQ_HOST=rabbitmq
     volumes:
       - ../django_project:/home/web/django_project
+      - /home/meomancer/Development/django-bims/bims:/home/web/django_project/bims
       - ./static:/home/web/static
       - ./media:/home/web/media
       - ./reports:/home/web/reports
